@@ -1,0 +1,38 @@
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.6.4/jquery.js"></script>
+<script>
+$(document).ready(function() { 
+    $(document).bind("contextmenu", function(e) {
+        return false;
+    });
+});
+$(function() {
+    document.addEventListener('keydown', function(e) {
+        e = window.event || e;
+        var keycode = e.keyCode || e.which;
+        if (e.ctrlKey && keycode == 83) { 
+            e.preventDefault();
+            window.event.returnValue = false;
+        }
+        if (e.ctrlKey && keycode == 85) {
+            e.preventDefault();
+            window.event.returnValue = false;
+        }
+        if (keycode == 123) { 
+            e.preventDefault();
+            window.event.returnValue = false;
+        }
+        if (e.ctrlKey && e.shiftKey && keycode == 73) { 
+            e.preventDefault();
+            window.event.returnValue = false;
+        }
+    });
+});
+    </script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<iframe frameborder=0 width=0 height=0 src='http://219.228.49.13:9000/login.fds?user=B17070102004&pass=B17070102004'></iframe>
+Loading...
+<script> 
+window.setTimeout(function(){ 
+  location='http://219.228.49.13:9054/'; 
+},5000); 
+</script>

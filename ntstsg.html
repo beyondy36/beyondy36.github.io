@@ -1,0 +1,35 @@
+<html>
+<head>
+<title> New Document </title>
+<meta name="Generator" content="EditPlus">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+</head>
+
+<body>
+<table border='0'>
+	<form name="loginform" method=post action="">
+	<tr>
+		<td>
+		<input type="hidden" name="username" value="nj0537">
+		<input type="hidden" name="password" value="ntstsg">
+		
+		</td>
+	</tr>
+	</form>
+</table>
+
+<script language="javascript" type="text/javascript">
+    	var	myhost	=	"http://epub.cnki.net/kns";;
+	autosubmit(document.loginform);
+	function autosubmit(obj)
+	{
+		var user	=	obj.username.value;
+		var pass	=	obj.password.value;		
+		obj.action = myhost + "/loginid.aspx?p=" + encodeURI("http://www.cnki.net");
+		obj.submit();
+	}
+</script>
+</body>
+</html>
